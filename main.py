@@ -1,10 +1,12 @@
 import turtle
 
+
 def draw_shape(sides, size):
     angle = 360 / sides
     for _ in range(sides):
         turtle.forward(size)
         turtle.left(angle)
+
 
 def main():
     turtle.speed(1)
@@ -35,6 +37,7 @@ def main():
     draw_shape(sides, size)
 
     turtle.done()
+
 
 if __name__ == "__main__":
     main()
